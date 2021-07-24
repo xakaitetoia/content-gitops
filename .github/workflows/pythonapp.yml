@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.docker_pw }}" | docker login -u "xakaitetoia" --password-stdin
-        docker image build -t xakaitetoia/gitops:hellov1.0 .
-        docker push xakaitetoia/gitops:hellov1.0
+        docker image build -t xakaitetoia/gitops:hellov1.2 .
+        docker push xakaitetoia/gitops:hellov1.2
